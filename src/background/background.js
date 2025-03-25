@@ -32,7 +32,7 @@ export class Background {
         redirect: { regexSubstitution: this.getRegexSubstitution() }
       },
       condition: {
-        regexFilter: '^(http|https)://go/.*',
+        regexFilter: '^https?://go/([^/]+).*',
         resourceTypes: ['main_frame']
       }
     }];
